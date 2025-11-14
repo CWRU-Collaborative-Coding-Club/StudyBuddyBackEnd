@@ -1,0 +1,40 @@
+{
+  "name": "study-buddy-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Study Buddy mobile app — handles users, study sessions, matching, and chat using Firebase",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint . --ext .js",
+    "test": "jest --coverage",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": [
+    "study-buddy",
+    "backend",
+    "firebase",
+    "express",
+    "react-native"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "firebase-admin": "^11.10.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "body-parser": "^1.20.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.2",
+    "eslint": "^8.47.0"
+  }
+}
